@@ -1,0 +1,303 @@
+<head>
+    <title>Music Analytics</title>
+    <link type="text/css" rel="stylesheet" href="elegant-aero.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-color:black;background-image:URL("zfHNFDb5.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:2cm"/>
+    <form action="/cgi-bin/taburaad/music-report.py" style="width:300px;margin:0 auto;padding-top=200px;background:#FFFFFF" method="get" target="results_iframe" class="elegant-aero">
+      <label>
+        <span>Select a city to view its most popular songs and genres:</span>
+      </label>
+
+<select name="city">
+<option value="Tokyo">Tokyo</option>
+<option value="New York">New York</option>
+<option value="Sao Paulo">Sao Paulo</option>
+<option value="Seoul">Seoul</option>
+<option value="Mexico City">Mexico City</option>
+<option value="Osaka">Osaka</option>
+<option value="Manila">Manila</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Delhi">Delhi</option>
+<option value="Jakarta">Jakarta</option>
+<option value="Lagos">Lagos</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Cairo">Cairo</option>
+<option value="Los Angeles">Los Angeles</option>
+<option value="Buenos Aires">Buenos Aires</option>
+<option value="Rio de Janeiro">Rio de Janeiro</option>
+<option value="Moscow">Moscow</option>
+<option value="Shanghai">Shanghai</option>
+<option value="Karachi">Karachi</option>
+<option value="Paris">Paris</option>
+<option value="Istanbul">Istanbul</option>
+<option value="Nagoya">Nagoya</option>
+<option value="Beijing">Beijing</option>
+<option selected value="Chicago">Chicago</option>
+<option value="London">London</option>
+<option value="Shenzhen">Shenzhen</option>
+<option value="Essen">Essen</option>
+<option value="Tehran">Tehran</option>
+<option value="Bogota">Bogota</option>
+<option value="Lima">Lima</option>
+<option value="Bangkok">Bangkok</option>
+<option value="Johannesburg">Johannesburg</option>
+<option value="Chennai">Chennai</option>
+<option value="Taipei">Taipei</option>
+<option value="Baghdad">Baghdad</option>
+<option value="Santiago">Santiago</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="St Petersburg">St Petersburg</option>
+<option value="Philadelphia">Philadelphia</option>
+<option value="Lahore">Lahore</option>
+<option value="Kinshasa">Kinshasa</option>
+<option value="Miami">Miami</option>
+<option value="Ho Chi Minh City">Ho Chi Minh City</option>
+<option value="Madrid">Madrid</option>
+<option value="Tianjin">Tianjin</option>
+<option value="Kuala Lumpur">Kuala Lumpur</option>
+<option value="Toronto">Toronto</option>
+<option value="Milan">Milan</option>
+<option value="Shenyang">Shenyang</option>
+<option value="Dallas/Fort Worth">Dallas/Fort Worth</option>
+<option value="Boston">Boston</option>
+<option value="Belo Horizonte">Belo Horizonte</option>
+<option value="Khartoum">Khartoum</option>
+<option value="Riyadh">Riyadh</option>
+<option value="Singapore">Singapore</option>
+<option value="Washington">Washington</option>
+<option value="Detroit">Detroit</option>
+<option value="Barcelona">Barcelona</option>
+<option value="Houston">Houston</option>
+<option value="Athens">Athens</option>
+<option value="Berlin">Berlin</option>
+<option value="Sydney">Sydney</option>
+<option value="Atlanta">Atlanta</option>
+<option value="Guadalajara">Guadalajara</option>
+<option value="San Francisco/Oakland">San Francisco/Oakland</option>
+<option value="Montreal.">Montreal.</option>
+<option value="Monterey">Monterey</option>
+<option value="Melbourne">Melbourne</option>
+<option value="Ankara">Ankara</option>
+<option value="Recife">Recife</option>
+<option value="Phoenix/Mesa">Phoenix/Mesa</option>
+<option value="Durban">Durban</option>
+<option value="Porto Alegre">Porto Alegre</option>
+<option value="Dalian">Dalian</option>
+<option value="Jeddah">Jeddah</option>
+<option value="Seattle">Seattle</option>
+<option value="Cape Town">Cape Town</option>
+<option value="San Diego">San Diego</option>
+<option value="Fortaleza">Fortaleza</option>
+<option value="Curitiba">Curitiba</option>
+<option value="Rome">Rome</option>
+<option value="Naples">Naples</option>
+<option value="Minneapolis/St. Paul">Minneapolis/St. Paul</option>
+<option value="Tel Aviv">Tel Aviv</option>
+<option value="Birmingham">Birmingham</option>
+<option value="Frankfurt">Frankfurt</option>
+<option value="Lisbon">Lisbon</option>
+<option value="Manchester">Manchester</option>
+<option value="San Juan">San Juan</option>
+<option value="Katowice">Katowice</option>
+<option value="Tashkent">Tashkent</option>
+<option value="Fukuoka">Fukuoka</option>
+<option value="Baku/Sumqayit">Baku/Sumqayit</option>
+<option value="St. Louis">St. Louis</option>
+<option value="Baltimore">Baltimore</option>
+<option value="Sapporo">Sapporo</option>
+<option value="Tampa/St. Petersburg">Tampa/St. Petersburg</option>
+<option value="Taichung">Taichung</option>
+<option value="Warsaw">Warsaw</option>
+<option value="Denver">Denver</option>
+<option value="Cologne/Bonn">Cologne/Bonn</option>
+<option value="Hamburg">Hamburg</option>
+<option value="Dubai">Dubai</option>
+<option value="Pretoria">Pretoria</option>
+<option value="Vancouver">Vancouver</option>
+<option value="Beirut">Beirut</option>
+<option value="Budapest">Budapest</option>
+<option value="Cleveland">Cleveland</option>
+<option value="Pittsburgh">Pittsburgh</option>
+<option value="Campinas">Campinas</option>
+<option value="Harare">Harare</option>
+<option value="Brasilia">Brasilia</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Munich">Munich</option>
+<option value="Portland">Portland</option>
+<option value="Brussels">Brussels</option>
+<option value="Vienna">Vienna</option>
+<option value="San Jose">San Jose</option>
+<option value="Damman">Damman</option>
+<option value="Copenhagen">Copenhagen</option>
+<option value="Brisbane">Brisbane</option>
+<option value="Riverside/San Bernardino">Riverside/San Bernardino</option>
+<option value="Cincinnati">Cincinnati</option>
+<option value="Accra">Accra</option>
+</select>
+
+<input type="submit" value="Submit" />
+
+      <label>
+        <span>Select a genre to see which city it is most uniquely popular in:</span>
+      </label>
+
+<select name="genre">
+<option selected value="closed">Select a genre</option>
+<option value="Pop">Pop</option>
+<option value="Rock">Rock</option>
+<option value="Latin">Latin</option>
+<option value="Country">Country</option>
+<option value="Electronic">Electronic</option>
+<option value="RnB">RnB</option>
+<option value="Rap">Rap</option>
+</select>
+
+<input type="submit" value="Submit" />
+
+      <label>
+        <span>Select a city to view its most recent popular songs:</span>
+      </label>
+<select name="city_recent">
+<option selected value="closed">Select a city</option>
+<option value="Tokyo">Tokyo</option>
+<option value="New York">New York</option>
+<option value="Sao Paulo">Sao Paulo</option>
+<option value="Seoul">Seoul</option>
+<option value="Mexico City">Mexico City</option>
+<option value="Osaka">Osaka</option>
+<option value="Manila">Manila</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Delhi">Delhi</option>
+<option value="Jakarta">Jakarta</option>
+<option value="Lagos">Lagos</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Cairo">Cairo</option>
+<option value="Los Angeles">Los Angeles</option>
+<option value="Buenos Aires">Buenos Aires</option>
+<option value="Rio de Janeiro">Rio de Janeiro</option>
+<option value="Moscow">Moscow</option>
+<option value="Shanghai">Shanghai</option>
+<option value="Karachi">Karachi</option>
+<option value="Paris">Paris</option>
+<option value="Istanbul">Istanbul</option>
+<option value="Nagoya">Nagoya</option>
+<option value="Beijing">Beijing</option>
+<option value="Chicago">Chicago</option>
+<option value="London">London</option>
+<option value="Shenzhen">Shenzhen</option>
+<option value="Essen">Essen</option>
+<option value="Tehran">Tehran</option>
+<option value="Bogota">Bogota</option>
+<option value="Lima">Lima</option>
+<option value="Bangkok">Bangkok</option>
+<option value="Johannesburg">Johannesburg</option>
+<option value="Chennai">Chennai</option>
+<option value="Taipei">Taipei</option>
+<option value="Baghdad">Baghdad</option>
+<option value="Santiago">Santiago</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="St Petersburg">St Petersburg</option>
+<option value="Philadelphia">Philadelphia</option>
+<option value="Lahore">Lahore</option>
+<option value="Kinshasa">Kinshasa</option>
+<option value="Miami">Miami</option>
+<option value="Ho Chi Minh City">Ho Chi Minh City</option>
+<option value="Madrid">Madrid</option>
+<option value="Tianjin">Tianjin</option>
+<option value="Kuala Lumpur">Kuala Lumpur</option>
+<option value="Toronto">Toronto</option>
+<option value="Milan">Milan</option>
+<option value="Shenyang">Shenyang</option>
+<option value="Dallas/Fort Worth">Dallas/Fort Worth</option>
+<option value="Boston">Boston</option>
+<option value="Belo Horizonte">Belo Horizonte</option>
+<option value="Khartoum">Khartoum</option>
+<option value="Riyadh">Riyadh</option>
+<option value="Singapore">Singapore</option>
+<option value="Washington">Washington</option>
+<option value="Detroit">Detroit</option>
+<option value="Barcelona">Barcelona</option>
+<option value="Houston">Houston</option>
+<option value="Athens">Athens</option>
+<option value="Berlin">Berlin</option>
+<option value="Sydney">Sydney</option>
+<option value="Atlanta">Atlanta</option>
+<option value="Guadalajara">Guadalajara</option>
+<option value="San Francisco/Oakland">San Francisco/Oakland</option>
+<option value="Montreal.">Montreal.</option>
+<option value="Monterey">Monterey</option>
+<option value="Melbourne">Melbourne</option>
+<option value="Ankara">Ankara</option>
+<option value="Recife">Recife</option>
+<option value="Phoenix/Mesa">Phoenix/Mesa</option>
+<option value="Durban">Durban</option>
+<option value="Porto Alegre">Porto Alegre</option>
+<option value="Dalian">Dalian</option>
+<option value="Jeddah">Jeddah</option>
+<option value="Seattle">Seattle</option>
+<option value="Cape Town">Cape Town</option>
+<option value="San Diego">San Diego</option>
+<option value="Fortaleza">Fortaleza</option>
+<option value="Curitiba">Curitiba</option>
+<option value="Rome">Rome</option>
+<option value="Naples">Naples</option>
+<option value="Minneapolis/St. Paul">Minneapolis/St. Paul</option>
+<option value="Tel Aviv">Tel Aviv</option>
+<option value="Birmingham">Birmingham</option>
+<option value="Frankfurt">Frankfurt</option>
+<option value="Lisbon">Lisbon</option>
+<option value="Manchester">Manchester</option>
+<option value="San Juan">San Juan</option>
+<option value="Katowice">Katowice</option>
+<option value="Tashkent">Tashkent</option>
+<option value="Fukuoka">Fukuoka</option>
+<option value="Baku/Sumqayit">Baku/Sumqayit</option>
+<option value="St. Louis">St. Louis</option>
+<option value="Baltimore">Baltimore</option>
+<option value="Sapporo">Sapporo</option>
+<option value="Tampa/St. Petersburg">Tampa/St. Petersburg</option>
+<option value="Taichung">Taichung</option>
+<option value="Warsaw">Warsaw</option>
+<option value="Denver">Denver</option>
+<option value="Cologne/Bonn">Cologne/Bonn</option>
+<option value="Hamburg">Hamburg</option>
+<option value="Dubai">Dubai</option>
+<option value="Pretoria">Pretoria</option>
+<option value="Vancouver">Vancouver</option>
+<option value="Beirut">Beirut</option>
+<option value="Budapest">Budapest</option>
+<option value="Cleveland">Cleveland</option>
+<option value="Pittsburgh">Pittsburgh</option>
+<option value="Campinas">Campinas</option>
+<option value="Harare">Harare</option>
+<option value="Brasilia">Brasilia</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Munich">Munich</option>
+<option value="Portland">Portland</option>
+<option value="Brussels">Brussels</option>
+<option value="Vienna">Vienna</option>
+<option value="San Jose">San Jose</option>
+<option value="Damman">Damman</option>
+<option value="Copenhagen">Copenhagen</option>
+<option value="Brisbane">Brisbane</option>
+<option value="Riverside/San Bernardino">Riverside/San Bernardino</option>
+<option value="Cincinnati">Cincinnati</option>
+<option value="Accra">Accra</option>
+</select>
+<input type="submit" value="Submit" />
+
+    </form>
+    <p style="margin-bottom:2cm"/>
+<p>
+<a href="http://104.197.248.161/taburaad/listen.html">
+<img border="0" alt="Listen" src="headphones-3-xxl.png" width="100" height="100">
+</a>
+</p>
+
+    <iframe frameBorder="0" height="500" name="results_iframe" style="display:block;width:70%;margin-left:auto;margin-right:auto"/>
+</body>
+</html>
